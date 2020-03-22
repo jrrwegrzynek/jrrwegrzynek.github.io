@@ -1,0 +1,114 @@
+/* rwd max-width 500px */
+
+@media all and (max-width: 500px) {
+
+    header {
+        margin: 0;
+        text-align: center;
+        font-size: 1.2em;
+    }
+
+    #main-section {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    #main-section h3 {
+        font-size: 1.4em;
+    }
+
+    #main-section #player-1 {
+        order: 1;
+    }
+
+    #main-section #player-2 {
+        order: 2;
+    }
+
+    #main-section #btn {
+        order: 3;
+        flex-basis: 80%;
+    }
+
+    .player {
+        margin: 0 2vh 0 2vh;
+    }
+}
+
+/* RWD max- width 360px */
+
+@media all and (max-width: 360px) {
+
+    header {
+        font-size: 1em;
+    }
+
+    header h1 {
+        padding: 20px;
+    }
+
+    #main-section h3 {
+        font-size: 1.2em;
+        padding: 10px;
+    }
+
+    #score {
+        margin-top: 15px;
+        font-size: 1.5em;
+    }
+
+    .player {
+        margin: 0 2px 0 2px;
+    }
+
+    #main-section #btn {
+        flex-basis: 95%;
+        padding: 10px;
+    }
+}
+
+/* rwd max-height 500px */
+
+
+@media all and (max-height: 500px) {
+
+    header {
+        margin-top: 0;
+        font-size: 1.2em;
+    }
+
+    header h1 {
+        padding: 5px;
+        font-size: 1.5em;
+    }
+
+    header h2 {
+        display: none;
+    }
+
+    #score {
+        margin-top: 0;
+        font-size: 1.4em;
+    }
+
+    #main-section h3 {
+        padding: 3px;
+        font-size: 1.1em;
+    }
+
+    #main-section .card, 
+    #main-section .card img[src="img/card.png"] {
+        width: 90px;
+        height: 140px;
+    }
+
+    #main-section .card p {
+        font-size: 1.5em;
+        margin-left: 5px;
+    }
+
+    #main-section #btn {
+        padding: 5px;
+        font-size: 1.3em;
+    }
+}

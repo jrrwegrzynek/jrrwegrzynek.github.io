@@ -1,0 +1,148 @@
+@media all and (max-width: 1024px) {
+
+    /* about */
+
+    .about-inner {
+        flex-direction: column;
+        padding: 10% 5%;
+    }
+
+    .about-inner #about-img {
+        align-self: center;
+        margin: 10%;
+    }
+
+    .about-inner #about-text {
+        border: none;
+    }
+    .fade-in {
+        opacity: 1;
+    }
+}
+
+@media all and (max-width: 768px) {
+
+    /* Navigation */
+
+    #nav ul span {
+        display:none;
+    }
+
+    /* Slider */
+
+    #quotes-slider {
+        height: none;
+        font-size: 10px;
+    }
+}
+
+@media all and (max-width: 600px) {
+        /* Navigation */
+
+    .menu-label {
+        display: block;
+        text-align: right;
+        color: black;
+        text-transform: uppercase;
+        }
+        
+    #nav{
+        display: block;
+    }
+        
+    #nav ul{
+        display: none;
+    }
+        
+    #nav #menu:checked + ul{
+        display: block;
+    }
+        
+    #nav .menu-label i {
+        padding: 5%;
+        font-size: 2.5em;
+    }
+        
+    #nav ul li{
+        display: block;
+        text-align: right;
+    }
+
+    /* Table */
+
+    .map-table {
+        flex-direction: column;
+    }
+
+    #contact form {
+        flex-direction: column;
+        width: 80%;
+        margin-top: 30px;
+    }
+
+    #contact form input[type="submit"] {
+        width: 30%;
+    }
+
+    #contact address {
+        text-align: right;
+        margin-left: 40%;
+    }
+
+}
+
+@media all and (max-width:480px) {
+
+    /* Header */
+
+    #header-inner {
+        flex-wrap: wrap;
+    }
+
+    #header-inner #logo h1 {
+        order: 0;
+        flex-basis: 90%;
+    }
+    
+    #header-inner #title h2 .span {
+        display: none;
+    }
+
+    #header-inner #logo {
+        order: 1;
+    }
+
+    #header-inner #kanji {
+        order: 2;
+    }
+
+    /* Slider */
+
+    .slick-dots {
+        display: none;
+    }
+
+    #quotes-slider {
+        position: static;
+        font-size: 0.8em;
+    }
+
+    /* Table */
+
+    .map-table {
+        flex-direction: column;
+    }
+
+    #trainings iframe {
+        width: 250px;
+        height: 250px;
+    }
+
+    #contact address {
+        margin: 0;
+    }
+
+    #contact form input[type="submit"] {
+        width: 100%;
+    }
+}

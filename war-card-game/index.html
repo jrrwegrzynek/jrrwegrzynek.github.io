@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Google fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap&subset=latin-ext" rel="stylesheet">
+    
+    <!-- styles -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- RWD -->
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <title>War card game</title>
+</head>
+<body>
+
+    <!-- Header -->
+
+    <header> 
+        <h1>
+            War Card Game!
+        </h1> 
+        <h2>
+            let's play a game!
+        </h2>
+    </header>
+
+    <!-- Section -->
+    <section id="score">
+            <p>score: <span id="spanOne"></span></p>
+            <p>score: <span id="spanTwo"></span></p>
+    </section>
+    <section id="main-section">
+        <div id="player-1" class="player">
+            <h3>Player 1</h3>
+            <div class = "card card-player-1">
+                <p id= "card-num-1"></p>
+                <img src="img/card.png" alt="spades clubs dimonds hearts" id="card-color-1" >
+            </div>
+        </div>
+        <button id="btn"> play!</button>
+        <div id="player-2" class="player">
+            <h3>Player 2</h3>
+            <div class="card card-player-2">
+                <p id= "card-num-2"></p>
+                <img src="img/card.png" alt="spades clubs dimonds hearts" id="card-color-2" >
+            </div>
+        </div>
+    </section>
+
+
+    <script src="js/main.js"></script>
+</body>
+</html>

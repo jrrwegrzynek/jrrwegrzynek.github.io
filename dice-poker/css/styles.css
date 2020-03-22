@@ -1,0 +1,142 @@
+/* Colors scheme https://color.adobe.com/pl/explore?page=3 */
+
+/* keyframes */
+
+@keyframes appearFromTop {
+    0% {
+        opacity: 0;
+        transform: translateY(-500px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes appearFromLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes appearFromCenter {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes appearButton {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+
+@keyframes bouncingButton {
+    0%,100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+}
+
+/* styles */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
+    font-family: 'Tomorrow', sans-serif;
+    background-color: #CBDBD7;
+    color:#3E606F;
+}
+
+/* nav */
+
+#main_nav {
+    display: flex;
+    justify-content: flex-end;
+
+}
+
+#main_nav ul li{
+    display: inline-block;
+    padding: 0 10px;
+    transition: .4s;
+}
+
+#main_nav ul li:hover  {
+    color: #91AAB4;
+    cursor: pointer;
+}
+
+/* section */
+
+#main_section {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 20px;
+}
+
+#main_section h1 {
+    margin: 0;
+    font-size: 3em;
+}
+
+#main_section button {
+    border: 1px solid;
+    padding: 8px;
+    color: #CBDBD7;
+    background-color:#3E606F;
+    font-size: 1.1em;
+    margin-top: 5%;
+    font-family: 'Tomorrow', sans-serif;
+    transition: .4s;
+    cursor: pointer;
+}
+
+#main_section button:hover {
+    background-color: #91AAB4 ;
+    color: #FCFFF5;
+    border: 1px solid #91AAB4 ;
+}
+
+
+/* animations */
+
+#main_nav #from-left {
+    animation: appearFromLeft 3.3s .3s both;
+}
+
+#main_section #from-top {
+    animation: appearFromTop 3.3s .1s both;
+}
+
+#main_section .from-center {
+    animation: appearFromCenter 1.4s 3s both;
+}
+
+#main_section #button-bouncing {
+    animation: appearButton 1.4s 3s both, bouncingButton infinite 1.3s 3s both;
+}

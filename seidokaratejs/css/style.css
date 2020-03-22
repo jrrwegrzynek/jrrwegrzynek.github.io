@@ -1,0 +1,262 @@
+body {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+hr {
+    width: 80%;
+}
+
+/* Header */
+
+#header {
+    font-family: 'Philosopher', sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 3%;
+}
+
+#header-inner {
+    display: flex;
+    justify-content: space-around;
+    padding: 5px;
+    background-color:#fdfdfd;
+}
+
+#header-inner #logo {
+    width: 135px;
+    height: 135px;
+}
+
+#header-inner #title {
+    display: block;
+}
+
+#header-inner #title h1 {
+    font-size: 60px;
+    margin: 0;
+}
+
+#header-inner #title h2 {
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 0;
+}
+
+#header-inner #kanji {
+    width: 73px;
+    height: 135px;
+}
+
+/* Navigation */
+
+#nav {
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    z-index: 1;
+    margin-bottom: 5%;
+}
+
+.menu-label,
+#menu {
+    display: none;
+}
+
+#nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+#nav ul li {
+    display: inline-block;
+    padding: 20px;
+    transition: all 0.4s;
+}
+
+
+#nav ul li a {
+    color: rgb(32, 32, 32);
+    text-decoration: none;
+    font-size: 20px;
+}
+
+#nav ul li:hover {
+    background-color: rgb(32, 32, 32);
+}
+
+#nav ul li:hover a {
+    color:white;
+}
+
+/* Slider */
+
+#slider {
+    position: relative;
+    margin: 0 5%;
+}
+
+#img-slider {
+    margin:0;
+}
+
+#img-slider div img {
+    width: 100%;
+    height: 100%;
+}
+
+#quotes-slider {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+}
+
+#quotes-slider div blockquote i {
+    text-align: left;
+}
+
+#quotes-slider div blockquote p,
+#quotes-slider div blockquote footer {
+    text-align: center;
+}
+
+#quotes-slider footer {
+    font-size: 1.6em;
+}
+
+/* About */
+
+.fade-in {
+    opacity:0;
+}
+
+.about-inner {
+
+    display: flex;
+    padding: 5% 15%;
+}
+
+#about-img {
+    flex-basis: 30%;
+
+}
+
+#about-img img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+#about-text {
+    flex-basis: 65%;
+    border: 2px solid rgb(194, 191, 191);
+    padding: 20px;
+    border-radius: 1%;
+}
+
+/* Table */
+
+#trainings {
+    padding: 10% 15%; 
+}
+
+#trainings h2 {
+    margin-top: 50px;
+}
+
+#trainings table {
+    margin-top: 100px;
+}
+
+#trainings table td,
+#trainings table th {
+    color: rgb(32, 32, 32);;
+    padding: 8px;
+}
+
+#trainings iframe {
+    width: 300px;
+    height: 300px;
+}
+
+.map-table {
+    display: flex;
+    justify-content: space-around;
+}
+
+#map-table-two {
+    margin-top: 10%;
+}
+
+/* Contact */
+
+#contact {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 5%;
+
+}
+
+#contact h3 {
+    flex-basis: 100%;
+    color:rgb(100, 100, 100);
+    margin-bottom: 10%;
+
+}
+
+#contact address {
+    color: rgb(190,190, 190);
+}
+
+#contact address a {
+    color: rgb(200, 200, 200);
+}
+
+#contact form {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+}
+
+#contact form input,
+#contact form textarea {
+    background-color:white;
+    border: 1px solid #e0e2e4;
+    padding: 15px;
+    margin-bottom: 2%;
+    color: #e0e2e4;
+}
+
+#contact form input[type="submit"] { 
+    background-color: #e0e2e4;
+    color: white;
+    border: 1px solid white;
+    width: 25%;   
+    align-self: flex-end;
+    transition: all 0.4s;
+}
+#contact form input[type="submit"]:hover { 
+    background-color: #c6c7c9;
+
+}
+
+/* Footer */
+
+#footer {
+    background-color: rgb(240, 240, 240);
+    color: #fdfdfd;
+    text-align: center;
+
+}
+
+#footer p {
+    margin: 0;
+}
+
+
+
