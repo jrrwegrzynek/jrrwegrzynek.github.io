@@ -11,7 +11,7 @@ const throwDices = (arr) => {
         arr.push(dice);
 
         // sort the array ascendingly
-        arr.sort((a, b) => b - a);
+
     }
 } 
 
@@ -22,12 +22,14 @@ console.log(hand);
 // TO DO:  ask the player if wishes to change any of the dices; 
 
 
-// const newArr = { ... hand }
-// console.log(newArr);
+const newArr = { ... hand }
+console.log(newArr);
 
 
 
+// sort the dices
 
+let SortTheDices = hand.sort((a, b) => b - a);
 
 // change the dices to string -> chage the string to one number
 

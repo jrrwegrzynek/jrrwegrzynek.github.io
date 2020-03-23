@@ -104,7 +104,7 @@ body {
     font-size: 3em;
 }
 
-#main_section button {
+ .button {
     border: 1px solid;
     padding: 8px;
     color: #CBDBD7;
@@ -116,7 +116,7 @@ body {
     cursor: pointer;
 }
 
-#main_section button:hover {
+.button:hover {
     background-color: #91AAB4 ;
     color: #FCFFF5;
     border: 1px solid #91AAB4 ;
@@ -140,3 +140,35 @@ body {
 #main_section #button-bouncing {
     animation: appearButton 1.4s 3s both, bouncingButton infinite 1.3s 3s both;
 }
+
+
+
+
+/* Playground */
+
+#play_ground {
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.players {
+    display: flex;
+    flex-direction: column;
+}
+
+#play_ground .dice {
+    width: 75px;
+    height: 75px;
+    margin: 5px;
+}
+
+#button-draw {
+    height: 25%;
+}
+
+
+
+
+
+
