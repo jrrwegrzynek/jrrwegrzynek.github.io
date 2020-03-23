@@ -3,20 +3,26 @@ let hand = [];
 
 // throwing the dice
 
-const throwDices = (arr) => {
+document.getElementById('button-draw').addEventListener('click', () =>  {
+    console.log('button was clicked');
 
-    for ( i = 0; i < 3; i++) {
-        let dice = Math.floor(Math.random()*6) + 1;
+    const throwDices = (arr) => {
 
-        arr.push(dice);
+        for ( i = 0; i < 3; i++) {
+            let dice = Math.floor(Math.random()*6) + 1;
+    
+            arr.push(dice);
+    
+        }
+    } 
+    throwDices(hand);
+    
+    
+    console.log(hand);
+});
 
-        // sort the array ascendingly
+// after the click push the array to object with arrays
 
-    }
-} 
-
-throwDices(hand);
-console.log(hand);
 
 
 // TO DO:  ask the player if wishes to change any of the dices; 
@@ -27,7 +33,7 @@ console.log(newArr);
 
 
 
-// sort the dices
+// sort the array ascendingly
 
 let SortTheDices = hand.sort((a, b) => b - a);
 
