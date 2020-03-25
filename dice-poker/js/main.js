@@ -31,27 +31,35 @@ document.getElementById('button-draw').addEventListener('click', () =>  {
     let SortTheDices = parseInt(hand.sort((a, b) => b - a).join(''), 10);
     console.log(SortTheDices);
 
-    // store the score in DOM
-    let score = document.getElementById(`player-${activePlayer}-score`).textContent = SortTheDices;
-
-
     arrayOfHands.push(SortTheDices);
     console.log(arrayOfHands);
+
+    let sumOfArray = arrayOfHands.reduce((a,c) => {
+        return a + c
+    });
+     console.log(sumOfArray);
+
+    // store the score in DOM
+    let score = document.getElementById(`player-${activePlayer}-score`).textContent = sumOfArray;
+
+    score =+ score;
+
+
+
+
+
+
 
     // if (activePlayer = 1) {
 
 
-        if (score === 1) {
             diceOne.src = `img/dice-${hand[0]}.png`;
             diceTwo.src = `img/dice-${hand[1]}.png`;
             diceThree.src = `img/dice-${hand[2]}.png`;
-            // activePlayer === 2;
-        } else {
             diceFour.src = `img/dice-${hand[0]}.png`;
             diceFive.src = `img/dice-${hand[1]}.png`;
             diceSix.src = `img/dice-${hand[2]}.png`;
-            // activePlayer === 1;
-        }
+
 });
 
 
