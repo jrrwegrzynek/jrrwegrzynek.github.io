@@ -1,8 +1,28 @@
-let hand = [];
+let arrayOfHands = []
+
+
+let activePlayer = 1;
+
+
+
+    //score
+
+
+
+    // DICES
+
+    let diceOne = document.getElementById('dice-1');
+    let diceTwo = document.getElementById('dice-2');
+    let diceThree = document.getElementById('dice-3');
+    let diceFour = document.getElementById('dice-4');
+    let diceFive = document.getElementById('dice-5');
+    let diceSix = document.getElementById('dice-6');
 
 // throwing the dice
 
 document.getElementById('button-draw').addEventListener('click', () =>  {
+    let hand = [];
+    // current player
 
     const throwDices = (arr) => {
 
@@ -13,11 +33,38 @@ document.getElementById('button-draw').addEventListener('click', () =>  {
         }
     } 
     throwDices(hand);
+    console.log(hand);
 
     // sort the array ascendingly & join to one string & change to number(parseInt)
     let SortTheDices = parseInt(hand.sort((a, b) => b - a).join(''), 10);
-    console.log(SortTheDices); 
+    console.log(SortTheDices);
+
+    arrayOfHands.push(SortTheDices);
+    console.log(arrayOfHands);
+
+
+    let score = document.getElementById(`player-${activePlayer}-score`).textContent = SortTheDices;
+  
+
+    // if (activePlayer = 1) {
+
+
+        if (score === 1) {
+            diceOne.src = `img/dice-${hand[0]}.png`;
+            diceTwo.src = `img/dice-${hand[1]}.png`;
+            diceThree.src = `img/dice-${hand[2]}.png`;
+            activePlayer === 2;
+        } else {
+            diceFour.src = `img/dice-${hand[0]}.png`;
+            diceFive.src = `img/dice-${hand[1]}.png`;
+            diceSix.src = `img/dice-${hand[2]}.png`;
+            activePlayer === 1;
+        }
+
+
+ 
 });
+
 
 
 
