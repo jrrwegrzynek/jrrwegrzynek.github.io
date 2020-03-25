@@ -31,9 +31,11 @@ document.getElementById('button-draw').addEventListener('click', () =>  {
     let SortTheDices = parseInt(hand.sort((a, b) => b - a).join(''), 10);
     console.log(SortTheDices);
 
+    // Push the sorted number to another array
     arrayOfHands.push(SortTheDices);
     console.log(arrayOfHands);
 
+    // add the next number of a array
     let sumOfArray = arrayOfHands.reduce((a,c) => {
         return a + c
     });
@@ -47,27 +49,21 @@ document.getElementById('button-draw').addEventListener('click', () =>  {
 
 
 
-
-
-
-    // if (activePlayer = 1) {
-
-
             diceOne.src = `img/dice-${hand[0]}.png`;
             diceTwo.src = `img/dice-${hand[1]}.png`;
             diceThree.src = `img/dice-${hand[2]}.png`;
-            diceFour.src = `img/dice-${hand[0]}.png`;
+/*             diceFour.src = `img/dice-${hand[0]}.png`;
             diceFive.src = `img/dice-${hand[1]}.png`;
-            diceSix.src = `img/dice-${hand[2]}.png`;
+            diceSix.src = `img/dice-${hand[2]}.png`; */
 
 });
 
 
 
+// to do - > change the player 
 
 
-
-// TO DO:  ask the player if wishes to change any of the dices; 
+// ****** TO DO:  ask the player if wishes to change any of the dices; 
 
 
 // const newArr = { ... hand }
