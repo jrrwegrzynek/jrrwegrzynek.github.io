@@ -149,7 +149,13 @@ body {
 #play_ground {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     
+}
+
+#player_won {
+    flex-basis: 100%;
+    text-align: center;
 }
 
 .players {

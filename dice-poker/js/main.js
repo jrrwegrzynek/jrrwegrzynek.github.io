@@ -5,7 +5,7 @@ let sumOfArrayTwo = 0;
 let gamePlaying = true;
 
 
-//Dices DOM
+//DOM
 
 let diceOne = document.getElementById('dice-1');
 let diceTwo = document.getElementById('dice-2');
@@ -13,6 +13,7 @@ let diceThree = document.getElementById('dice-3');
 let diceFour = document.getElementById('dice-4');
 let diceFive = document.getElementById('dice-5');
 let diceSix = document.getElementById('dice-6');
+// let playerWon = document.getElementById('player_won').style.display = "none";
 
 // throwing the dice
 
@@ -31,7 +32,16 @@ document.getElementById('button-draw').addEventListener('click', () =>  {
 
         // for future record if wishes to change any of dices
         throwDices(hand);
-        // console.log(hand);
+
+        // if the dieces are the same add 500 points to the player's score
+        if (hand[0] ===  hand[2] && hand[2] === hand[1]) {
+            //  console.log('takie same!')
+             activePlayer === 1 ? arrayOfHands[0].push(500):arrayOfHands[1].push(500);
+            } else {
+
+                // console.log('inne');
+            }
+        console.log(hand);
 
         // sort the array ascendingly & join to one string & change to number(parseInt)
         let SortTheDices = parseInt(hand.sort((a, b) => b - a).join(''), 10);
@@ -66,15 +76,15 @@ document.getElementById('button-draw').addEventListener('click', () =>  {
         }
         console.log(arrayOfHands);
 
-
-        if (sumOfArrayOne > 2000 ) {
+        if (sumOfArrayOne > 10000 ) {
             console.log('player one wygrywa')
             gamePlaying = false;
-        } else if (sumOfArrayTwo > 2000) {
+            document.getElementById('player_won').textContent = "player 1 won!";
+        } else if (sumOfArrayTwo > 10000 ) {
             console.log('player two wygrywa')
             gamePlaying = false;
+            document.getElementById('player_won').textContent = "player 2 won!";
         }
-
     }
 });
 
