@@ -1,5 +1,6 @@
-let arrayOfHands = [];
+let arrayOfHands = [[0], [0]];
 let activePlayer = 1;
+
 
 //Dices DOM
 
@@ -25,49 +26,49 @@ document.getElementById('button-draw').addEventListener('click', () =>  {
 
     // for future record if wishes to change any of dices
     throwDices(hand);
-    console.log(hand);
+    // console.log(hand);
 
     // sort the array ascendingly & join to one string & change to number(parseInt)
     let SortTheDices = parseInt(hand.sort((a, b) => b - a).join(''), 10);
-    console.log(SortTheDices);
 
-    // Push the sorted number to another array
-    arrayOfHands.push(SortTheDices);
+
+
+    // If playerOne is active push the sorted dice number to array& add new score
+    if (activePlayer === 1 ) {
+
+        diceOne.src = `img/dice-${hand[0]}.png`;
+        diceTwo.src = `img/dice-${hand[1]}.png`;
+        diceThree.src = `img/dice-${hand[2]}.png`;
+        activePlayer = 2
+        arrayOfHands[0].push(SortTheDices);
+        let sumOfArrayOne = arrayOfHands[0].reduce((a,c) => {
+            return a + c
+        });
+        document.getElementById(`player-1-score`).textContent = `score: ${sumOfArrayOne}`;
+        console.log(sumOfArrayOne);
+
+    } else {
+    
+        diceFour.src = `img/dice-${hand[0]}.png`;    
+        diceFive.src = `img/dice-${hand[1]}.png`;    
+        diceSix.src = `img/dice-${hand[2]}.png`; 
+        activePlayer = 1
+        arrayOfHands[1].push(SortTheDices);
+        let sumOfArrayTwo = arrayOfHands[1].reduce((a,c) => {
+            return a + c
+        });
+        document.getElementById(`player-2-score`).textContent = `score: ${sumOfArrayTwo}`;
+        console.log(sumOfArrayTwo);
+
+    }
     console.log(arrayOfHands);
-
-    // add the next number of a array
-    let sumOfArray = arrayOfHands.reduce((a,c) => {
-        return a + c
-    });
-     console.log(sumOfArray);
-
-    // store the score in DOM
-    let score = document.getElementById(`player-${activePlayer}-score`).textContent = sumOfArray;
-
-    score =+ score;
-
-
-
-
-            diceOne.src = `img/dice-${hand[0]}.png`;
-            diceTwo.src = `img/dice-${hand[1]}.png`;
-            diceThree.src = `img/dice-${hand[2]}.png`;
-/*             diceFour.src = `img/dice-${hand[0]}.png`;
-            diceFive.src = `img/dice-${hand[1]}.png`;
-            diceSix.src = `img/dice-${hand[2]}.png`; */
 
 });
 
 
 
-// to do - > change the player 
-
-
 // ****** TO DO:  ask the player if wishes to change any of the dices; 
 
-
-// const newArr = { ... hand }
-// console.log(newArr);
 
 
 
