@@ -169,10 +169,11 @@ body {
     margin: 5px;
 }
 
-#button-draw {
-    height: 25%;
+#buttons {
     align-self: center;
+    display: grid;
 }
+
 
 
 
