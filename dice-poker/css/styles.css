@@ -13,17 +13,6 @@
     }
 }
 
-@keyframes appearFromLeft {
-    0% {
-        opacity: 0;
-        transform: translateX(-100px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
 @keyframes appearFromCenter {
     0% {
         opacity: 0;
@@ -91,25 +80,6 @@ body {
     color:#3E606F;
 }
 
-/* nav */
-
-#main_nav {
-    display: flex;
-    justify-content: flex-end;
-
-}
-
-#main_nav ul li{
-    display: inline-block;
-    padding: 0 10px;
-    transition: .4s;
-}
-
-#main_nav ul li:hover  {
-    color: #91AAB4;
-    cursor: pointer;
-}
-
 /* section */
 
 .main_section {
@@ -148,10 +118,6 @@ body {
 
 
 /* animations */
-
-#main_nav .from-left {
-    animation: appearFromLeft 3.3s .3s both;
-}
 
 .main_section .from-top {
     animation: appearFromTop 3.3s .1s both;

@@ -1,0 +1,15 @@
+            <ul id="game_rules_list">
+                <header>Witamy w grze Dice Poker!</header><br>
+                <li>1. Aby rozpoczac gre nacisnij "play".</li>
+                <li>2. Po naciśnięciu ukaze sie plansza z kościamy do gry.</li>
+                <li>3. Aby rzucic kosciamy nacisnij "draw".</li>
+                <li>4. mozesz wymienic <b>jedna</b> z kosciu podczas kazdego rzutu</li>
+                <li>5. wartości kosci ukladaja sie rosnaco tworzac jedna liczbe:
+                    <img class="dice_sample" id="dice-1" src="img/dice-1.png" alt="dice-1">
+                    <img class="dice_sample" id="dice-5" src="img/dice-5.png" alt="dice-5">
+                    <img class="dice_sample" id="dice-2" src="img/dice-2.png" alt="dice-2">
+                    daje nam liczbę "521".</li>
+                <li>6. jezeli gracz wylosuje 3 takie same kosci dostaje dodatkowo 500 punktow.</li>
+                <li>7. pierwszy gracz ktory zdobedzie minimum 10k punktow wygrywa</li>
+            </ul>
+        </ul>

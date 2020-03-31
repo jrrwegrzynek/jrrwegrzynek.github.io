@@ -1,4 +1,3 @@
-
 //game logic variables.
 let arrayOfHands = [[0], [0]];
 let activePlayer = 0;
@@ -33,7 +32,6 @@ let dices = [
 
 
 buttonPlay.addEventListener('click', () => {
-    document.querySelector('.from-left').classList.add('from-left-disappear');
     document.querySelector('.from-top').classList.add('from-top-disappear');
     document.querySelector('.from-center').classList.add('from-center-disappear');
     setTimeout(function(){ buttonPlay.style.visibility = 'hidden'; }, 10);
