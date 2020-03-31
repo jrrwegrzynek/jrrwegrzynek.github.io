@@ -1,6 +1,6 @@
 /* Colors scheme https://color.adobe.com/pl/explore?page=3 */
 
-/* keyframes */
+/* keyframes appear */
 
 @keyframes appearFromTop {
     0% {
@@ -42,13 +42,36 @@
     }
 }
 
-
 @keyframes bouncingButton {
     0%,100% {
         transform: scale(1);
     }
     50% {
         transform: scale(1.2);
+    }
+}
+
+/* keyframes dissapear  */
+
+@keyframes disappearFromTop {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-500px);
+    }
+}
+            
+@keyframes disappearFromCenter {
+    0% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateX(500px);
     }
 }
 
@@ -89,7 +112,7 @@ body {
 
 /* section */
 
-#main_section {
+.main_section {
     height: 100%;
     width: 100%;
     display: flex;
@@ -97,14 +120,15 @@ body {
     align-items: center;
     flex-direction: column;
     font-size: 20px;
+    position: absolute;
 }
 
-#main_section h1 {
+.main_section h1 {
     margin: 0;
     font-size: 3em;
 }
 
- .button {
+.button {
     border: 1px solid;
     padding: 8px;
     color: #CBDBD7;
@@ -125,32 +149,43 @@ body {
 
 /* animations */
 
-#main_nav #from-left {
+#main_nav .from-left {
     animation: appearFromLeft 3.3s .3s both;
 }
 
-#main_section #from-top {
+.main_section .from-top {
     animation: appearFromTop 3.3s .1s both;
 }
 
-#main_section .from-center {
+.main_section .from-center {
     animation: appearFromCenter 1.4s 3s both;
 }
 
-#main_section #button-bouncing {
+.main_section #button-bouncing {
     animation: appearButton 1.4s 3s both, bouncingButton infinite 1.3s 3s both;
 }
 
+        /* animations 2 */
 
+        .main_section .from-top-disappear {
+            animation: disappearFromTop 3.3s .1s both;
+        }
 
+        .main_section .from-center-disappear {
+            animation: disappearFromCenter .3s .2s both;
+        }
 
+        .main_section_dissapear {
+            display: none;
+        }
 /* Playground */
 
 #play_ground {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
-    
+    position: relative;
+    top: 25%;
 }
 
 #player_won {
