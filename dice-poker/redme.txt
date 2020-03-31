@@ -1,0 +1,9 @@
+Witamy w grze Dice Poker!
+
+1. Aby rozpoczac gre nacisnij "play".
+2. Po naciśnięciu ukaze sie plansza z kościamy do gry.
+3. Aby rzucic kosciamy nacisnij "draw".
+4. mozesz wymienic jedna z kosciu podczas kazdego rzutu
+5. wartości kosci ukladaja sie rosnaco tworzac jedna liczbe: wylosowanie kości "2" "5" "1" daje nam liczbę "521".
+6. jezeli gracz wylosuje 3 takie same kosci dostaje dodatkowo 500 punktow.
+7. pierwszy gracz ktory zdobedzie minimum 10k punktow wygrywa
