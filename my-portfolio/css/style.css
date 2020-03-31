@@ -1,0 +1,254 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    color: rgba(85, 85, 85, 0.52);
+    text-align: center;
+}
+
+ /* Helpers */
+
+h1,h2,h3,h4 {
+   color:rgb(79, 87, 94);
+}
+
+hr {
+  margin:5%;
+}
+
+section {
+    margin: 0 20%;
+}
+
+/* Header */
+
+#main-header {
+    background-image: url("../img/bg.jpg");
+    background-repeat: no-repeat;
+    height: 50vh;
+    background-position: center;
+    background-size: 100%;
+    transition: 1s;
+    opacity: 0;
+}
+
+#main-header.fade {
+opacity: 1;
+}
+
+#main-header #header-title {
+    margin-top: 50px;
+    font-weight: lighter;
+    font-size: 1.8em;
+} 
+
+/* Navigation */
+
+#main-header #main-nav {
+    background-color: rgba(85, 85, 85, 0.52);
+    width: 100%;
+    padding: 1px;
+}
+
+#main-header #main-nav ul {
+    font-size: 14px;
+    letter-spacing: 1.5px;
+    line-height: 1em;
+    text-transform: uppercase;
+    text-align: end;
+    margin: 0;
+}
+
+#main-header #main-nav ul li {
+    display: inline-block;
+    padding: 12px 15px;
+    position: relative;
+}
+
+#main-header #main-nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#main-header #main-nav ul li:before,
+#main-header #main-nav ul li:after {
+    -webkit-transition: all 0.35s ease;
+    transition: all 0.35s ease;
+    height: 2px;
+    width: 35%;
+    background-color: rgb(240, 240, 240);
+    position: absolute;
+    content: '';
+    opacity: 0;
+}
+
+#main-header #main-nav ul li:before {
+    top: 0;
+    left: 0;
+}
+
+#main-header #main-nav ul li:after {
+    bottom: 0;
+    right: 0;
+}
+
+#main-header #main-nav ul li:hover:before,
+#main-header #main-nav ul li.hover:before,
+#main-header #main-nav ul li:hover:after,
+#main-header #main-nav ul li.hover:after {
+    opacity: 1;
+}
+
+#main-header #main-nav ul li:hover:before,
+#main-header #main-nav ul li.hover:before {
+    left: 65%;
+}
+
+#main-header #main-nav ul li:hover:after,
+#main-header #main-nav ul li.hover:after {
+    right: 65%;
+}
+
+#main-header #main-nav .menu-label,
+#main-header #main-nav #rwd-menu {
+    display: none;
+}
+
+#main-header h1 {
+    text-transform: uppercase;
+}
+
+/* About */
+
+#about {
+    margin-top: 5%;
+    color: #55555585;
+    transition: 4s;
+    opacity: 0;
+}
+
+#about.fade {
+    opacity: 1;
+}
+
+#about h3 {
+    font-size: 1.6em;
+}
+
+#about #profi {
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    margin: 5%;
+}
+
+#about p {
+    text-align: justify;
+    padding-bottom: 20px;
+}
+
+.about-icons  {
+font-size: 40px;
+border-top: 1px solid;
+border-bottom: 1px solid;
+padding: 40px;
+}
+
+.about-icons i {
+    padding: 10px;
+    color: #696969;
+}
+
+#jquery-svg {
+    width: 80px;
+    filter: invert(41%) sepia(3%) saturate(24%) hue-rotate(344deg) brightness(99%) contrast(94%);
+}
+
+#about h4 {
+    color: rgba(85, 85, 85, 0.52);
+}
+
+#about #react {
+    font-size: 60px;
+}
+
+/* Portfolio */
+
+#portfolio {
+    margin-top: 5%;
+}
+
+#portfolio h3 {
+    margin: 5%;
+}
+
+#portfolio figure {
+    position: relative;
+    display: inline-block;
+    margin:0;
+    width: 300px;
+    height: 300px;
+    margin-bottom: 10%;
+}
+
+#portfolio figure img {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+#portfolio figure figcaption {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300px;
+    height: 300px;
+    line-height: 300px;   
+    background-color:rgba(70, 70, 70, 0.52);
+    transition: all 0.6s;
+    opacity: 0;
+}
+
+#portfolio figure figcaption a {
+    padding: 20px;
+    font-size: 3em;
+    color: rgb(217, 217, 217);
+    transition: 0.8s;
+}
+
+#portfolio figure figcaption a:hover {
+    color: white;
+}
+
+
+#portfolio figure:hover figcaption {
+    opacity: 1;
+}
+
+/* Contact */
+
+#contact {   
+    text-align: right;
+}
+
+#contact i {
+    font-size: 30px;
+    transition: 0.4s;
+    color: rgba(85, 85, 85, 0.52);
+}
+
+#contact:hover i {
+    color: rgba(15, 15, 15, 0.52);
+    cursor: pointer;
+}
+
+#contact address a {
+    text-decoration: none;
+    color: rgba(85, 85, 85, 0.52);
+}
+
+/* Footer */
+
+#main-footer h5 {
+    color: rgba(235,235,235, 0.5);
+}
