@@ -181,3 +181,23 @@ document.getElementById('button-submit').addEventListener('click', () => {
 function newGame(){
     window.location.reload();
 }
+
+
+
+// working on loop for each dice
+
+
+/* for (i = 0; i < dices.length; i++) {
+    dices[i].addEventListener('click', () => {
+        //you can redraw only ine dice
+        if (diceRolled) {
+            for (h = 0; h < hand.length; h++ ) {
+                hand[h] = Math.floor(Math.random()*6) + 1;
+                dices[i].src = `img/dice-${hand[h]}.png`
+                //dice was redrawn
+                dices[i].classList.add('dice_clicked');
+            }
+        }
+        diceRolled = false;
+    });
+} */
