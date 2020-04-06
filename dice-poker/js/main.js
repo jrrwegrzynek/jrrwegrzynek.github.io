@@ -1,5 +1,5 @@
 //game logic variables.
-let arrayOfHands = [[0], [0]];
+const arrayOfHands = [[0], [0]];
 let activePlayer = 0;
 let sumOfArray = 0;
 let gamePlaying = true;
@@ -8,7 +8,7 @@ let hand;
 
 //DOM
 
-let dices = [
+const dices = [
     diceOne = document.getElementById('dice-1'),
     diceTwo = document.getElementById('dice-2'),
     diceThree = document.getElementById('dice-3'),
@@ -16,18 +16,18 @@ let dices = [
     diceFive = document.getElementById('dice-5'),
     diceSix = document.getElementById('dice-6')
     ];
-    let clickedDice = document.getElementsByClassName('dice_clicked');
+    const clickedDice = document.getElementsByClassName('dice_clicked');
 
     //BUTTONS  
-    let buttonPlay = document.getElementById('button-bouncing');
-    let buttonDraw = document.getElementById('button-draw');
-    let buttonSubmit = document.getElementById('button-submit');
+    const buttonPlay = document.getElementById('button-bouncing');
+    const buttonDraw = document.getElementById('button-draw');
+    const buttonSubmit = document.getElementById('button-submit');
     buttonSubmit.disabled = true;
 
     //SECTIONS 
 
-    let sectionMain = document.getElementById('main_section');
-    let sectionPlay = document.getElementById('play_ground');
+    const sectionMain = document.getElementById('main_section');
+    const sectionPlay = document.getElementById('play_ground');
     sectionPlay.style.visibility = 'hidden';
 
 
@@ -143,7 +143,7 @@ document.getElementById('button-submit').addEventListener('click', () => {
 
         buttonDraw.disabled = false;
         // sort the array ascendingly & join to one string & change to number(parseInt)
-        let sortTheDices = parseInt(hand.sort((a, b) => b - a).join(''), 10);
+        const sortTheDices = parseInt(hand.sort((a, b) => b - a).join(''), 10);
 
             arrayOfHands[activePlayer].push(sortTheDices);
 
