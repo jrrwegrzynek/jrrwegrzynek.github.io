@@ -80,6 +80,37 @@ body {
     color:#3E606F;
 }
 
+/* navigation */
+
+nav ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+nav ul li {
+    font-size: 1em;
+    /* transition: .4s; */
+    cursor: pointer;
+}
+
+nav ul li span {
+    display: none;
+}
+
+nav ul li:hover  {
+    color: #CBDBD7;
+    border: 0px solid;
+}
+
+nav ul li:hover span {
+    display: initial;
+    color:#3E606F ;
+}
+
 /* section */
 
 .main_section {
@@ -144,6 +175,7 @@ body {
         .main_section_dissapear {
             display: none;
         }
+
 /* Playground */
 
 #play_ground {

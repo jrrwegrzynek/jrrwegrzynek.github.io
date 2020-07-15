@@ -187,7 +187,7 @@ function newGame(){
 // working on loop for each dice
 
 
-for (i = 0; i < dices.length; i++) {
+/* for (i = 0; i < dices.length; i++) {
     dices[i].addEventListener('click', () => {
         //you can redraw only ine dice
         if (diceRolled) {
@@ -200,4 +200,4 @@ for (i = 0; i < dices.length; i++) {
         }
         diceRolled = false;
     });
-} 
+}  */
